@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  # データベース
+  ubuntu:
+    container_name: linux-in-practice-ubuntu
+    build: .
+    platform: linux/amd64
+    volumes:
+      - .:/workspace
+    environment:
+      - TZ=Asia/Tokyo
+      - LANG=ja_JP.UTF-8
+      - LANGUAGE=ja_JP:ja
