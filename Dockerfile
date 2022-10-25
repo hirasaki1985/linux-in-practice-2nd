@@ -7,7 +7,7 @@ RUN apt-get update -y \
     && apt upgrade -y
 
 # install necessary libraries.
-RUN apt install -y strace sysstat
+RUN apt install -y strace sysstat psmisc
 
 ############
 # go lang
